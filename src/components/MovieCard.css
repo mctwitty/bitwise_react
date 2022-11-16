@@ -1,0 +1,12 @@
+.movieCard {
+  border: 1px solid #fff;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  width: calc(20% - 12px);
+}
+.movieCard > p {
+  margin: 0;
+}

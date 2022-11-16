@@ -1,7 +1,11 @@
 const baseURL = 'https://www.omdbapi.com/'
 const apiKey = process.env.REACT_APP_OMDB_APIKEY
 
-const getMoviesByName = (title) => {
+/**
+ * 
+ * @param {text} title 
+ */
+const getMovieByName = (title) => {
   const param = 't'
   fetch(`${baseURL}?apikey=${apiKey}&${param}=${title}`)
     .then(res => res.json())
@@ -11,6 +15,18 @@ const getMoviesByName = (title) => {
     .catch(err => {
       console.log(err)
     })
+}
+const getMoviesByName = (title) => {
+  const param = 's'
+  const url = `${baseURL}?apikey=${apiKey}&${param}=${title}`
+  return (fetch(url)
+    .then(res => res.json())
+    .then(({ Search }) => {
+      return Search
+    })
+    .catch(err => {
+      console.log(err)
+    }))
 }
 const getMovieDetailsById = async (id) => {
   const param = 'i'
@@ -27,4 +43,4 @@ const getMovieDetailsById = async (id) => {
 
 // getMovieDetailsById('tt0145487')
 // returns Spider-Man (2002)
-export { getMovieDetailsById, getMoviesByName }
+export { getMovieDetailsById, getMoviesByName, getMovieByName }

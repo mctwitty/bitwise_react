@@ -1,0 +1,15 @@
+.movieListContainer {
+  background-color: #fff;
+  border: 1.5px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+input[type="search"] {
+  height: 2.5em;
+  width: 25ch;
+  margin: 1em;
+  border-radius: 8px;
+  padding: .25em .5em;
+  font-size: 1.5rem;
+}
