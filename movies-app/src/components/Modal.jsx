@@ -10,7 +10,7 @@ function Modal(props) {
   return (
     <div className='modal' onClick={handleClick}>
       <button className='close' >X</button>
-      <div>{props.children}</div>
+      {props.children}
     </div>
   );
 }

@@ -21,6 +21,7 @@
 .env.production.local
 .env
 todo
+*.code-workspace
 
 npm-debug.log*
 yarn-debug.log*
