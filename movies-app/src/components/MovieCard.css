@@ -10,3 +10,12 @@
 .movieCard > p {
   margin: 0;
 }
+.movie {
+  color: tomato;
+}
+.series {
+  color: blueviolet;
+}
+.game {
+  color: greenyellow;
+}

@@ -1,0 +1,9 @@
+.movieDetails {
+  max-width: 600px;
+  background-color: #eee;
+  padding: 1em;
+  margin: 2em auto;  
+}
+.rating {
+  color: aqua;
+}
